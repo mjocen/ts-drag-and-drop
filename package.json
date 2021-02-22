@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
     "watch": "tsc -w",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.prod.js"
   },
   "keywords": [
     "typescript",
@@ -16,6 +16,7 @@
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "lite-server": "^2.6.1",
     "prettier": "2.1.2",
     "ts-loader": "^8.0.17",
